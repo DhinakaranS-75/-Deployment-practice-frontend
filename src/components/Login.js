@@ -27,7 +27,7 @@ function Login() {
         e.preventDefault();
       
         try {
-          const response = await axios.post('http://localhost:3000/login', { email, password });
+          const response = await axios.post('https://deployment-practice75.onrender.com/login', { email, password });
           navigate("/dashbord");
           toast.success(response.data.message);
         } catch (error) {
